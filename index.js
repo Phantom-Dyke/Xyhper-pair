@@ -6,7 +6,7 @@ const port = process.env.PORT || 8000;
 code = require('./pair');
 require('events').EventEmitter.defaultMaxListeners = 500;
 app.use('/code', code);
-app.use('/pair',async (req, res, next) => {
+app.get('/pair',async (req, res, next) => {
 res.sendFile(__path + '/pair.html')
 })
 
