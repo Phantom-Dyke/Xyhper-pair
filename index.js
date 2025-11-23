@@ -12,7 +12,7 @@ res.sendFile(__path + '/pair.html')
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.get('/', (req, res) => {res.redirect('/pair'});
+app.get('/', (req, res) => {res.redirect('/pair'}));
 app.listen(port, () => {
     console.log(`📡 Connected on http://localhost:` + port)
 })
